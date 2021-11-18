@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title th:text="${titulo}" ></title>
+</head>
+<body>
+<h1 th:text="${titulo}" ></h1>
+
+<ul>
+<li><a th:href="@{/variables/string/} + 'hola Romario' " >/variables/string/hola Romario</a></li>
+<li><a th:href="@{/variables/string/} + 'que tal Romario' " >/variables/string/que tal Romario</a></li>
+<li><a th:href="@{/variables/string/} + 'saludos Romario' + '' + 7 " >/variables/string/saludos Romario/7</a></li>
+
+</ul>
+</body>
+</html>

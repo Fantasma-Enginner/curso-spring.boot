@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org" >
+<head>
+<meta charset="UTF-8">
+<title>enviar parametros del reques http getInsert title here</title>
+</head>
+<body>
+
+<h1>enviar parametros del reques http getInsert title here</h1>
+<ul>
+
+
+<li><a th:href="@{/params/string(text='hola romario')}" >/params/string?texto=hola romario</a></li>
+<li><a th:href="@{/params/string(text='que tal jhon')}" >/params/string?texto=que tal jhon</a></li>
+<li><a th:href="@{/params/max-params(saludo='que tal romario', numero=7)}" >/params/maxparams?saludo=que tal romairo!&numero=7</a></li>
+<li><a th:href="@{/params/max-params-request(saludo='que tal romario', numero=7)}" >/params/max-params-request?saludo=que tal romairo!&numero=7</a></li>
+
+
+
+
+</ul>
+</body>
+</html>
